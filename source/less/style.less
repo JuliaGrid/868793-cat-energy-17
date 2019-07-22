@@ -1,0 +1,57 @@
+@import "page-header.less";
+@import "greeting.less";
+@import "programs.less";
+@import "advantages.less";
+@import "example.less";
+@import "address.less";
+@import "page-footer.less";
+@import "catalog.less";
+@import "additional.less";
+
+@font-face {
+  font-family: OswaldRegular; /* Имя шрифта */
+  src: url(../fonts/oswaldregular.woff); /* Путь к файлу со шрифтом */
+ }
+
+ @leaf-color: #68b738;
+ @white-two-color: #f2f2f2;
+ @header-gray-color: #111111;
+ @content-gray-color: #444444;
+
+body {
+  background: white;
+  font-family: OswaldRegular, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: @leaf-color;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.section__tittle {
+  color: @header-gray-color;
+  font-size: 36px;
+  line-height: 60px;
+}
