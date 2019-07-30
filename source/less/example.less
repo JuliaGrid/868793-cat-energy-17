@@ -1,34 +1,78 @@
 .example {
+  margin-top: 42px;
+  padding-top: 16px;
   background-color: @white-two-color;
 }
 
+.example__wrapper {
+  width: 280px;
+  margin: auto;
+}
+
 .example__descritpion {
+  margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @content-gray-color;
+  margin-top: 23px;
 }
 
-.example__weight-and-term-value {
+.example__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin-top: 40px;
+}
+
+.example__value {
   font-size: 24px;
   line-height: 24px;
   color: @header-gray-color;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.example__weight-and-term-note {
+.example__note {
+  width: 57px;
+  margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   color: @content-gray-color;
   text-align: center;
+  margin-top: 6px;
 }
 
 .example__cost {
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  padding: 0;
   color: @header-gray-color;
+  text-transform: uppercase;
   text-align: center;
+  margin-top: 18px;
+}
+
+.example__img-difference {
+  margin-top: 38px;
+}
+
+.example__image {
+  display: block;
+  margin: auto;
+}
+
+.example__difference-wrap {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 37px;
+  padding-bottom: 36px;
 }
 
 .example__difference {
@@ -37,4 +81,106 @@
   color: @header-gray-color;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: white;
+    margin-top: 102px;
+    border-top: 1px solid @white-two-color;
+    padding-top: 43px;
+  }
+
+  .example__wrapper {
+    width: 708px;
+  }
+
+  .example__descritpion {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 65px;
+  }
+
+  .example__cost-wrap {
+    display: flex;
+    width: 708px;
+    justify-content: space-between;
+    margin-top: 28px;
+  }
+
+  .example__wrap {
+    width: 366px;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__note {
+    width: 145px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .example__cost {
+    width: 175px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example__img-difference {
+    margin-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .example__image {
+    height: 536px; //временое решение
+  }
+
+  .example__difference-wrap {
+    width: 570px;
+    margin-top: 20px;
+  }
+
+  .example__difference {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    margin-top: 82px;
+    border-top: none;
+  }
+
+  .example__wrapper {
+    width: 1220px;
+    background-color: @white-two-color;
+  }
+
+  .example__descritpion {
+    width: 430px;
+    margin-top: 76px;
+    padding-top: 70px;
+  }
+
+  .example__cost-wrap {
+    flex-direction: column;
+    margin-top: 45px;
+  }
+
+  .example__img-difference {
+    margin-top: -360px;
+    margin-left: 280px;
+  }
+
+  .example__image {
+    margin-top: -576px;
+  }
+
+  .example__difference-wrap {
+    margin-top: 38px;
+    padding-bottom: 34px;
+  }
 }

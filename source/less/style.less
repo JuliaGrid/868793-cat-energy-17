@@ -17,6 +17,8 @@
 @white-two-color: #f2f2f2;
 @header-gray-color: #111111;
 @content-gray-color: #444444;
+@tablet-width: 768px;
+@desktop-width: 1440px;
 
 body {
   background: white;
@@ -30,16 +32,23 @@ a {
   color: black;
 }
 
+.main-wrapper {
+  margin: auto;
+}
+
 .button {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+  width: 280px;
   text-align: center;
   background-color: @leaf-color;
   color: white;
   text-transform: uppercase;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 9px;
+  border: none;
+  display: block;
 }
 
 .visually-hidden {
@@ -51,7 +60,23 @@ a {
 }
 
 .section__tittle {
+  display: block;
   color: @header-gray-color;
   font-size: 36px;
   line-height: 60px;
+  width: 280px;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .section__tittle {
+    width: 708px;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    width: 170px;
+  }
 }
