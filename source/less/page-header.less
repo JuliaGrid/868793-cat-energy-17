@@ -1,3 +1,40 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  height: 65px;
+}
+
 .main-nav__list {
   list-style: none;
+  height: 195px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+    height: 83px;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 113px;
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

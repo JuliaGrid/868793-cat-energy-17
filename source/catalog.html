@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог продукции</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
@@ -30,7 +31,7 @@
   </header>
 
   <main>
-    <h1>Каталог продукции</h1>
+    <h1 class="main-title">Каталог продукции</h1>
 
     <section class="catalog">
       <h2 class="visually-hidden">Каталог основной продукции</h2>
@@ -175,54 +176,58 @@
             </table>
             <button class="main-catalog__buy button">Заказать</button>
           </li>
+          <li>
+            <div class=" main-catalog__item another">
+              <strong class="another__number">Показать еще 100500 товаров</strong>
+              <p class="another__intro">На самом деле вкусов гораздо больше!</p>
+              <a class="another__show button" href="#">Показать все</a>
+            </div>
+          </li>
       </ul>
-      <div class="catalog__another another">
-        <strong class="another__number">Показать еще 100500 товаров</strong>
-        <p class="another__intro">На самом деле вкусов гораздо больше!</p>
-        <a class="another__show button" href="#">Показать все</a>
-      </div>
     </section>
 
     <section class="additional">
       <h2 class="additional__big-tittle">Дополнительные товары</h2>
-      <ul class="additional__list">
-        <li class="additional__item">
-          <h3 class="additional__title">Сахарозаменитель</h3>
-          <div class="additional__values">
-            <div class="additional__size">1 упаковка (100 г)</div>
-            <div class="additional__price">200 Р.</div>
-          </div>
-          <button class="additional__buy button">Заказать</button>
-        </li>
-        <li class="additional__item">
+      <div class="additional__wrapper">
+        <ul class="additional__list">
+          <li class="additional__item">
+            <h3 class="additional__title">Сахарозаменитель</h3>
+            <div class="additional__values">
+              <div class="additional__size">1 упаковка (100 г)</div>
+              <div class="additional__price">200 Р.</div>
+            </div>
+            <button class="additional__buy button">Заказать</button>
+          </li>
+          <li class="additional__item">
             <h3 class="additional__title">Питьевая вода</h3>
             <div class="additional__values">
               <div class="additional__size">5 литров</div>
               <div class="additional__price">50 Р.</div>
             </div>
             <button class="additional__buy button">Заказать</button>
-        </li>
-        <li class="additional__item">
+          </li>
+          <li class="additional__item">
             <h3 class="additional__title">Молоко</h3>
             <div class="additional__values">
               <div class="additional__size">1 литр</div>
               <div class="additional__price">100 Р.</div>
             </div>
             <button class="additional__buy button">Заказать</button>
-        </li>
-        <li class="additional__item">
+          </li>
+          <li class="additional__item">
             <h3 class="additional__title">Витамины</h3>
             <div class="additional__values">
               <div class="additional__size">1 упаковка (30 г)</div>
               <div class="additional__price">300 Р.</div>
             </div>
             <button class="additional__buy button">Заказать</button>
-        </li>
-      </ul>
-      <div class="additional__gift">
-        <p>Закажите все
-          и получите чехол для кота в подарок!
-        </p>
+          </li>
+        </ul>
+        <div class="additional__gift">
+          <p>Закажите все
+            и получите чехол для кота в подарок!
+          </p>
+        </div>
       </div>
     </section>
   </main>
