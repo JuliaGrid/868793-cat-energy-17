@@ -29,7 +29,7 @@
   font-size: 14px;
   line-height: 1;
   margin: 0 auto;
-  padding-top: 21px;
+  padding-top: 24px;
   padding-bottom: 29px;
 }
 
@@ -37,45 +37,59 @@
   font-size: 14px;
   line-height: 18px;
   margin: auto;
-  margin-top: 276px;
+  margin-top: 274px;
   position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .greeting__wrapper {
+    background-image: none;
     background-color: white;
   }
 
   .greeting__title {
     width: 420px;
-    padding-top: 58px;
+    padding-top: 56px;
     text-align: left;
     font-size: 60px;
+    margin-left: 15.625%;
     color: @header-gray-color;
   }
 
   .greeting__slogan {
     width: 300px;
     text-align: left;
+    margin-left: 15.625%;
     font-size: 20px;
     color: @header-gray-color;
-    padding-top: 40px;
+    padding-top: 41px;
   }
 
   .greetind__img-food {
+    background-image: url("../img/index-can-tablet@1x.jpg");
     height: 609px;
-    margin: -50px;
+    margin: -48px;
   }
 
   .greeting__selection {
+    font-size: 20px;
+    width: 245px;
     margin-top: 19px;
-    height: 52px;  //временное решение
+    margin-left: 15.625%;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 4px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .greeting {
     display: flex;
+  }
+
+  .greeting__wrapper {
+    margin-left: 8.6%;
+    background: none;
   }
 
   .greeting__title {
@@ -87,7 +101,10 @@
   }
 
   .greetind__img-food {
-    margin: 0;
-    width: 502px;
+    background-image: url("../img/index-can-desktop@1x.png");
+    margin-top: 30px;
+    margin-left: 16px;
+    width: 552px;
+    height: 499px;
   }
 }

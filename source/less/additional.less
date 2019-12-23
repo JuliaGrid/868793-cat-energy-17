@@ -1,22 +1,39 @@
 .additional__big-tittle {
+  width: 280px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   color: @header-gray-color;
+  margin: auto;
+  margin-top: 28px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .additional__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.additional__item {
+  width: 280px;
+  margin: auto;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .additional__title {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   color: #222222;
   text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 13px;
 }
 
 .additional__values {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -27,22 +44,199 @@
   text-align: right;
 }
 
+.additional__buy {
+  margin-top: 16px;
+  margin-bottom: 17px;
+}
+
 .additional__gift {
   text-align: center;
-  padding-top: 190px;
+  margin-top: 39px;
   padding-bottom: 43px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-color: @leaf-color;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: white;
 }
 
+.additional__img {
+  height: 61px;
+  width: 56px;
+  padding-top: 65px;
+  margin: auto;
+}
+
+.additional__note {
+  width: 158px;
+  padding-top: 60px;
+  padding-bottom: 34px;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .additional__big-tittle {
+    width: 350px;
+    border: none;
+    font-size: 36px;
+    margin-left: 8.72%;
+    margin-top: 66px;
+  }
+
+  .additional__list {
+    margin-top: 47px;
+  }
+
+  .additional__item {
+    width: 708px;
+    border: 1px solid #cdcdcd;
+    padding-top: 14px;
+  }
+
+  .additional__title-values {
+    width: 634px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+
+  .additional__title {
+    font-size: 20px;
+  }
+
+  .additional__values {
+    width: 228px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 5px;
+    justify-content: flex-end;
+  }
+
+  .additional__size {
+    margin-right: 52px;
+  }
+
+  .additional__price {
+    width: 44px;
+  }
+
+  .additional__buy {
+    width: 634px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 26px;
+  }
+
+  .additional__gift {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    display: flex;
+    margin-top: 70px;
+  }
+
+  .additional__img {
+    padding: 0;
+    margin-top: 65px;
+    margin-left: 120px;
+  }
+
+  .additional__note {
+    text-align: left;
+    margin-left: 120px;
+    padding-top: 72px;
+  }
+
+  .additional {
+    margin-bottom: 67px;
+  }
+}
+
 @media (min-width: @desktop-width) {
+  .additional {
+    padding-bottom: 85px;
+  }
+
+  .additional__big-tittle {
+    margin-top: 76px;
+  }
+
   .additional__wrapper {
     display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: auto;
+  }
+
+  .additional__list {
+    width: 894px;
+    border-top: @border;
+    margin-top: 46px;
+  }
+
+  .additional__item {
+    width: 894px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: @border;
+    padding-top: 14px;
+  }
+
+  .additional__title {
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  .additional__values {
+    margin: 0;
+    margin-top: 15px;
+    width: 286px;
+    justify-content: space-between;
+  }
+
+  .additional__size {
+    text-align: left;
+    width: 140px;
+  }
+
+  .additional__price {
+    text-align: left;
+  }
+
+  .additional__title-values {
+    margin: 0;
+    width: 612px;
+    align-items: flex-start;
+  }
+
+  .additional__buy {
+    width: 245px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
+
+  .additional__gift {
+    background-image: url('../img/gift-photo-desktop@1x.jpg');
+    width: 245px;
+    margin-top: 46px;
+    flex-direction: column;
+  }
+
+  .additional__img {
+    margin-left: 0;
+    margin: auto;
+    margin-top: 64px;
+  }
+
+  .additional__note {
+    width: 148px;
+    padding: 0;
+    margin: auto;
+    margin-top: 62px;
+    text-align: center;
   }
 }
