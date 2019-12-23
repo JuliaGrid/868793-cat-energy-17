@@ -1,5 +1,6 @@
 .address {
   background-color: white;
+  padding-top: 20px;
 }
 
 .address__white-back {
@@ -14,7 +15,7 @@
   width: 280px;
   justify-content: space-between;
   margin: auto;
-  margin-top: 28px;
+  margin-top: 8px;
   padding-bottom: 26px;
   position: relative;
 }
@@ -31,6 +32,7 @@
 .address__adds {
   display: block;
   width: 135px;
+  margin-right: 4px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -43,9 +45,35 @@
   margin-top: -38px;
 }
 
+.catalog-wrapper {
+  .address {
+    background-color: @white-two-color;
+  }
+  .address__wrapper {
+    background-color: @white-two-color;
+  }
+  .address__white-back {
+    background-color: @white-two-color;
+  }
+}
+
+.form-wrapper {
+  .address {
+    background-color: @white-two-color;
+    margin-top: 72px;
+  }
+  .address__wrapper {
+    background-color: @white-two-color;
+    margin-top: 44px;
+  }
+  .address__white-back {
+    background-color: @white-two-color;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .address__wrapper {
-    margin-top: 66px;
+    margin-top: 62px;
     padding-bottom: 60px;
     width: 625px;
   }
@@ -54,6 +82,7 @@
     width: 155px;
     font-size: 20px;
     line-height: 25px;
+    margin-top: 2px;
   }
 
   .address__adds {
@@ -63,6 +92,58 @@
   }
 
   .address__map {
-    height: 434px; //временное решение
+    margin: -4px auto;
+  }
+
+  .catalog-wrapper {
+    .address__wrapper {
+      margin-top: 44px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    padding: 0;
+  }
+
+  .address__white-back {
+    width: 570px;
+    margin-top: 95px;
+    margin-left: 7.64%;
+  }
+
+  .address__wrapper {
+    width: 404px;
+  }
+
+  .address__map {
+    margin-top: -297px;
+  }
+
+  .address__cooperation {
+    margin-top: 67px;
+  }
+
+  .address__adds {
+    margin-top: 64px;
+  }
+
+  .catalog-wrapper {
+    .address__white-back {
+      background-color: white;
+    }
+    .address__wrapper {
+      background-color: white;
+    }
+  }
+
+  .form-wrapper {
+    .address__white-back {
+      background-color: white;
+    }
+    .address__wrapper {
+      background-color: white;
+    }
   }
 }

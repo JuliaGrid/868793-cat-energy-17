@@ -1,3 +1,4 @@
+@import "big-style.less";
 @import "page-header.less";
 @import "greeting.less";
 @import "programs.less";
@@ -7,6 +8,7 @@
 @import "page-footer.less";
 @import "catalog.less";
 @import "additional.less";
+@import "selection.less";
 
 @font-face {
   font-family: "OswaldRegular"; /* Имя шрифта */
@@ -18,65 +20,7 @@
 @header-gray-color: #111111;
 @content-gray-color: #444444;
 @tablet-width: 768px;
-@desktop-width: 1440px;
-
-body {
-  background: white;
-  font-family: "OswaldRegular", "Verdana", sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.main-wrapper {
-  margin: auto;
-}
-
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  width: 280px;
-  text-align: center;
-  background-color: @leaf-color;
-  color: white;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 9px;
-  border: none;
-  display: block;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.section__tittle {
-  display: block;
-  color: @header-gray-color;
-  font-size: 36px;
-  line-height: 60px;
-  width: 280px;
-  margin: auto;
-}
-
-@media (min-width: @tablet-width) {
-  .section__tittle {
-    width: 708px;
-    font-size: 60px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .button {
-    width: 170px;
-  }
-}
+@desktop-width: 1300px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+@border: 1px solid #e6e6e6;

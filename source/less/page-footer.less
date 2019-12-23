@@ -3,24 +3,34 @@
 }
 
 .page-footer__logo {
-  width: 135px;
+  width: 128px;
   margin: auto;
   padding-top: 39px;
+  padding-bottom: 26px;
+  padding-left: 75px;
+  padding-right: 75px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .contacts__list {
-  width: 126px;
+  width: 135px;
   list-style: none;
   padding: 0;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin: auto;
+  margin-top: 22px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  margin-top: 48px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .contacts__item-href {
   height: 20px;
+  width: 21px;
+  margin: auto;
   display: flex;
   align-items: center;
 }
@@ -31,7 +41,7 @@
   justify-content: space-between;
   margin: auto;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 18px;
 }
 
 .html-academy__name {
@@ -46,4 +56,23 @@
     display: flex;
     padding-top: 20px;
   }
+
+  .page-footer__logo {
+    margin-top: 10px;
+    border: none;
+  }
+
+  .contacts__list {
+    margin-top: 40px;
+    border: none;
+  }
+
+  .contacts__item-href svg{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

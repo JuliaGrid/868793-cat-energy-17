@@ -1,11 +1,11 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  margin-top: 19px;
+  margin-top: 18px;
 }
 
 .advantages__wrapper {
-  width: 275px;
+  width: 278px;
   margin: auto;
 }
 
@@ -13,16 +13,52 @@
   padding: 0;
   margin: auto;
   list-style: none;
+  margin-top: 28px;
 }
 
 .advantages__item {
-  margin-top: 28px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.advantages__img {
+  background-color: @leaf-color;
+  height: 60px;
+  width: 60px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+.advantages__item:nth-child(1) {
+  .advantages__img{
+  background-image: url("../img/advantage-leaf@1x.png");
+  }
+}
+
+.advantages__item:nth-child(2) {
+  .advantages__img{
+  background-image: url("../img/advantage-powder@1x.png");
+  }
+}
+
+.advantages__item:nth-child(3) {
+  .advantages__img{
+  background-image: url("../img/advantage-dining@1x.png");
+  }
+}
+
+.advantages__item:nth-child(4) {
+  .advantages__img{
+  background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 .advantages__description {
   width: 195px;
   padding: 0;
-  margin: 0 auto;
+  margin: auto;
+  margin-left: 18px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -47,14 +83,15 @@
   }
 
   .advantages__item {
-    margin-top: 185px;
+    flex-direction: column;
     width: 205px;
-    margin-right: 40px;
+    margin-top: 72px;
+    margin-right: 41px;
   }
 
   .advantages__item:nth-child(3),
   .advantages__item:nth-child(4) {
-    margin-top: 244px;
+    margin-top: 113px;
   }
 
   .advantages__item:nth-child(2) {
@@ -69,16 +106,23 @@
     }
   }
 
+  .advantages__img {
+    height: 80px;
+    width: 80px;
+  }
+
   .advantages__description {
     font-size: 16px;
     line-height: 24px;
     width: 205px;
+    margin-top: 32px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
-    margin-top: 72px;
+    margin-top: 74px;
   }
 
   .advantages__wrapper {
@@ -86,14 +130,19 @@
   }
 
   .advantages__list {
-    width: 1220px;
-    margin-top: 185px;
+    width: 1212px;
+    margin-top: 70px;
   }
 
   .advantages__item {
     width: 240px;
     margin-right: 0;
     margin-top: 0;
+  }
+
+  .advantages__img {
+    height: 80px;
+    width: 80px;
   }
 
   .advantages__description {
