@@ -1,16 +1,16 @@
 .address {
-  background-color: white;
+  background-color: @white-two-color;
   padding-top: 20px;
 }
 
 .address__white-back {
   width: 100%;
   position: relative;
-  background-color: white;
+  background-color: @white-two-color;
 }
 
 .address__wrapper {
-  background-color: white;
+  background-color: @white-two-color;
   display: flex;
   width: 280px;
   justify-content: space-between;
@@ -45,37 +45,27 @@
   margin-top: -38px;
 }
 
-.catalog-wrapper {
+.main-wrapper {
   .address {
-    background-color: @white-two-color;
+    background-color: white;
   }
   .address__wrapper {
-    background-color: @white-two-color;
+    background-color: white;
   }
   .address__white-back {
-    background-color: @white-two-color;
-  }
-}
-
-.form-wrapper {
-  .address {
-    background-color: @white-two-color;
-    margin-top: 72px;
-  }
-  .address__wrapper {
-    background-color: @white-two-color;
-    margin-top: 44px;
-  }
-  .address__white-back {
-    background-color: @white-two-color;
+    background-color: white;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .address {
+    padding: 0;
+  }
+
   .address__wrapper {
-    margin-top: 62px;
-    padding-bottom: 60px;
-    width: 625px;
+    margin-top: 63px;
+    padding-bottom: 58px;
+    width: 629px;
   }
 
   .address__cooperation {
@@ -89,6 +79,11 @@
     width: 155px;
     font-size: 16px;
     text-align: right;
+  }
+
+  .address__adds-city {
+    margin-top: 20px;
+    display: block;
   }
 
   .address__map {
