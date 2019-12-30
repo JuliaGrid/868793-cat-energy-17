@@ -57,7 +57,7 @@ a {
   .main-wrapper {
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position-x: 720px;
+    background-position-x: 100%;
   }
   .button {
     width: 170px;
@@ -65,6 +65,11 @@ a {
   .section__tittle {
     width: 1220px;
     text-align: left;
+  }
+}
+@media (min-width: 1650px) {
+  .main-wrapper {
+    background-position-x: 87%;
   }
 }
 .page-header {
